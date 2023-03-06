@@ -394,7 +394,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/ROCKERSBACKUP"),
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/ROCKERSBACKUP).",
                     disable_web_page_preview=True
                 )
                 return
