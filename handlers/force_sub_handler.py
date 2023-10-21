@@ -32,7 +32,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Sir, You are Banned to use me. Contact my [Jnanesh](https://t.me/Beastonejnanesh).",
+                text="Sorry Sir, You are Banned to use me. Contact my [Jnanesh](https://t.me/jnaneshtn).",
                 disable_web_page_preview=True
             )
             return 400
@@ -44,7 +44,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**\n\n"
+            text="**<b>Please Join My Updates Channel to use this Bot!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
                  "Due to Overload, Only Channel Subscribers can use the Bot!",
             reply_markup=InlineKeyboardMarkup(
                 [
