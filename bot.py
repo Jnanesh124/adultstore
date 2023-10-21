@@ -74,12 +74,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("ಸಿನಿಮಾ ಹಾಲ್", url="https://t.me/jnaneshgowdatn"),
+                        InlineKeyboardButton("Ott movie", url="https://t.me/+D7L-rX9lKA43MGRl"),
                         InlineKeyboardButton("Bots Channel", url="https://t.me/ROCKERSBACKUP")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("About Bot", url="https://t.me/+D7L-rX9lKA43MGRl"),
+                        InlineKeyboardButton("About Dev", url="https://t.me/+D7L-rX9lKA43MGRl")
                     ]
                 ]
             )
@@ -120,7 +120,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/JoinOT)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/ROCKERSBACKUP)",
                                      disable_web_page_preview=True)
             return
 
@@ -148,7 +148,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://telegram.mee/{Config.BOT_USERNAME}?start=jnaneshgowda_{str_to_b64(file_er_id)}"
+            share_link = f"https://telegram.me/{Config.BOT_USERNAME}?start=jnaneshgowda_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -315,11 +315,11 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://t.me/Beastonejnanesh")
+                                             url="https://t.me/Jnaneshtn")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("About Dev", url="https://t.me/Jnaneshtn")
                     ]
                 ]
             )
@@ -333,10 +333,10 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://t.me/Beastonejnanesh")
+                                             url="https://t.me/jnaneshtn")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("About Bot", url="https://t.me/Jnaneshtn"),
                         InlineKeyboardButton("Go Home", callback_data="gotohome")
                     ]
                 ]
@@ -350,12 +350,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/jnaneshgowdatn"),
+                        InlineKeyboardButton("Support Group", url="https://t.me/jnaneshtn"),
                         InlineKeyboardButton("Bots Channel", url="https://t.me/ROCKERSBACKUP")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("About Dev", url="https://t.me/Jnaneshtn")
                     ]
                 ]
             )
@@ -371,19 +371,19 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ROCKERSBACKUP).",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!**\n\n"
+                    text="**<b>You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!\n\n ಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
                          "Due to Overload, Only Channel Subscribers can use the Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("Join Updates Channel", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
@@ -405,11 +405,11 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Support Group", url="https://t.me/ROCKERSBACKUP"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/jnaneshgowdatn")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/jnaneshtn")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("About Bot", url="https://t.me/jnaneshtn"),
+                        InlineKeyboardButton("About Dev", url="https://t.me/jnaneshtn")
                     ]
                 ]
             )
