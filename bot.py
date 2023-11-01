@@ -74,12 +74,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Ott movie", url="https://t.me/+D7L-rX9lKA43MGRl"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/ROCKERSBACKUP")
+                        InlineKeyboardButton("🔎Ott movie", url="https://t.me/+D7L-rX9lKA43MGRl"),
+                        InlineKeyboardButton("🔞Adult Videos", url="https://telegram.me/+Ce98xoyvoLcwYThl")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", url="https://t.me/+D7L-rX9lKA43MGRl"),
-                        InlineKeyboardButton("About Dev", url="https://t.me/+D7L-rX9lKA43MGRl")
+                        InlineKeyboardButton("🎭About Bot", url="https://t.me/ROCKERSBACKUP"),
+                        InlineKeyboardButton("👀About Dev", url="https://t.me/alonekingjnanesh")
                     ]
                 ]
             )
@@ -148,7 +148,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://telegram.me/{Config.BOT_USERNAME}?start=jnaneshgowda_{str_to_b64(file_er_id)}"
+            share_link = f"🔎OTT Released Movies :- https://telegram.me/+Ce98xoyvoLcwYThl 🔞Adult videos :- https://telegram.me/+D7L-rX9lKA43MGRl"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -378,7 +378,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**<b>You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!\n\n ಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
+                    text="**<b>You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!\n\n ಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ\n\n🔎Ott Released Movies\n🚀Link:- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult Videos\n🚀Link:- https://telegram.me/+Ce98xoyvoLcwYThl</b>**\n\n"
                          "Due to Overload, Only Channel Subscribers can use the Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -405,7 +405,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Support Group", url="https://t.me/ROCKERSBACKUP"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/jnaneshtn")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/alonekingjnanesh")
                     ],
                     [
                         InlineKeyboardButton("About Bot", url="https://t.me/jnaneshtn"),
