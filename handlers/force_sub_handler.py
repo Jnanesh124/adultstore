@@ -44,7 +44,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**<b>Please Join My Updates Channel to use this Bot!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ\n\n🔎OTT Released Movies\nLink :- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult Videos\nLink :- https://telegram.me/+Ce98xoyvoLcwYThl</b>**\n\n"
+            text="**<b>Please Join My Updates Channel to use this Bot!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ\n\n🔎OTT Released Movies\nLink :- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult Videos\nLink :- https://t.me/+1JtfWmlSGawxNzRl</b>**\n\n"
                  "Due to Overload, Only Channel Subscribers can use the Bot!",
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -61,7 +61,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Jnanesh](https://t.me/jnaneshtn).",
+            text="Something went Wrong. Contact my [Jnanesh](https://t.me/alonekingjnanesh).",
             disable_web_page_preview=True
         )
         return 200
