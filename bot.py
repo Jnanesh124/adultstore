@@ -75,10 +75,10 @@ async def start(bot: Client, cmd: Message):
                 [
                     [
                         InlineKeyboardButton("🔎Ott movie", url="https://t.me/+D7L-rX9lKA43MGRl"),
-                        InlineKeyboardButton("🔞Adult Videos", url="https://telegram.me/+Ce98xoyvoLcwYThl")
+                        InlineKeyboardButton("🔞Adult Videos", url="https://t.me/+1JtfWmlSGawxNzRl")
                     ],
                     [
-                        InlineKeyboardButton("🎭About Bot", url="https://t.me/ROCKERSBACKUP"),
+                        InlineKeyboardButton("Backup channel", url="https://t.me/ROCKERSBACKUP"),
                         InlineKeyboardButton("👀About Dev", url="https://t.me/alonekingjnanesh")
                     ]
                 ]
@@ -148,7 +148,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"🔎OTT Released Movies :- https://telegram.me/+Ce98xoyvoLcwYThl 🔞Adult videos :- https://telegram.me/+D7L-rX9lKA43MGRl"
+            share_link = f"🔎OTT Released Movies :- https://telegram.me/+Ce98xoyvoLcwYThl 🔞Adult videos :- https://t.me/+1JtfWmlSGawxNzRl"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -319,7 +319,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", url="https://t.me/Jnaneshtn")
+                        InlineKeyboardButton("About Dev", url="https://t.me/alonekingjnanesh")
                     ]
                 ]
             )
@@ -333,10 +333,10 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://t.me/jnaneshtn")
+                                             url="https://t.me/alonekingjnanesh")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", url="https://t.me/Jnaneshtn"),
+                        InlineKeyboardButton("About Bot", url="https://t.me/alonekingjnanesh"),
                         InlineKeyboardButton("Go Home", callback_data="gotohome")
                     ]
                 ]
@@ -378,7 +378,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**<b>You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!\n\n ಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ\n\n🔎Ott Released Movies\n🚀Link:- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult Videos\n🚀Link:- https://telegram.me/+Ce98xoyvoLcwYThl</b>**\n\n"
+                    text="**<b>You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!\n\n ಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
                          "Due to Overload, Only Channel Subscribers can use the Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
