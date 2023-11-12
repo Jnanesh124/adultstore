@@ -12,7 +12,7 @@ async def reply_forward(message: Message, file_id: int):
     try:
         await message.reply_text(
             f"**🔎Also Join Below My Channel:**\n"
-            f"<b>🔎Ott Released Movies\nLink :- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult  Videos\nLink :- https://telegram.me/+Ce98xoyvoLcwYThl</b>\n\n",
+            f"<b>🔎Ott Released Movies\nLink :- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult  Videos\nLink :- https://t.me/+1JtfWmlSGawxNzRl</b>\n\n",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(e.value)
