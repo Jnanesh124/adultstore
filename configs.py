@@ -30,10 +30,10 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** [Jnanesh](https://t.me/jnaneshtn)
+🧑🏻‍💻 **Developer:** [Jnanesh](https://t.me/alonekingjnanesh)
 
 
-📢 **Updates Channel:** [ಸಿನಿಮಾ ಹಾಲ್](https://t.me/jnaneshtn)
+📢 **Updates Channel:** [ಸಿನಿಮಾ ಹಾಲ್](https://t.me/alonekingjnanesh)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @alonekingjnanesh 
