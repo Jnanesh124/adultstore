@@ -49,8 +49,8 @@ async def handle_force_sub(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔥 SUBSCRIBE MY YOUTUBE CHANNEL", url="https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW")
-                        InlineKeyboardButton("🍿 Join Updates Channel 🍿", url=invite_link.invite_link),
+                        InlineKeyboardButton("🔥 SUBSCRIBE MY YOUTUBE CHANNEL", url="https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW"),
+                        InlineKeyboardButton("🍿 Join Updates Channel 🍿", url=invite_link.invite_link)
                     ],
                     [
                         InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshForceSub")
