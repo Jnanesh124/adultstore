@@ -44,12 +44,13 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**<b>Please Join My Updates Channel to use this Bot!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
+            text="**<b>Please Join My Updates Channel and subscrib my YouTube channe to use this Bot!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
                  "Due to Overload, Only Channel Subscribers can use the Bot!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🔥 SUBSCRIBE MY YOUTUBE CHANNEL", url="https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW")
+                        InlineKeyboardButton("🍿 Join Updates Channel 🍿", url=invite_link.invite_link),
                     ],
                     [
                         InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshForceSub")
