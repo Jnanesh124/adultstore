@@ -47,5 +47,37 @@ Also remember that developer will Delete Adult Contents from Database. So better
 	HOME_TEXT = """
 Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
 
-Send me any file I will give you a permanent Sharable Link. I Support Channel Also! Check **About Bot** Button.
+𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐎𝐧𝐥𝐢𝐧𝐞 𝐌𝐨𝐯𝐢𝐞𝐬  🕶
+
+t.me/+66Rsf3q0p3c2M2Nl
+
+𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐇𝐃 𝐌𝐨𝐯𝐢𝐞𝐬  🍿
+
+t.me/+1z2A8ZxGkEM1N2Q1
+
+𝐓𝐫𝐞𝐧𝐝𝐢𝐧𝐠 𝐌𝐨𝐯𝐢𝐞𝐬 𝐇𝐃 📸
+
+t.me/+8K8gz7k6Ry05YzZl
+
+Online Streaming group 💜
+
+t.me/+oQT1f1iF4fU4ZGVl
+
+18+ banned Movies 🔞
+
+t.me/+3xxIFZXTj9E1M2E1
+
+𝐑𝐨𝐜𝐤𝐞𝐫𝐬 𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐓𝐯 𝐒𝐞𝐫𝐢𝐚𝐥𝐬 📺
+
+t.me/Rockers_TV_Serials
+
+Sex porn nudi adult video 🔞🔥
+
+t.me/+Ce98xoyvoLcwYThl
+
+𝐉𝐃 𝐈𝐏𝐋 𝐌𝐚𝐭𝐜𝐡 𝐑𝐞𝐩𝐨𝐫𝐭 ⁱᵖˡ ᵐᵃᵗᶜʰ📢
+
+t.me/+rNwi4b0VLU1iODU1
+
+©️@ROCKERSBACKUP 
 """
