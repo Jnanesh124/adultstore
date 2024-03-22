@@ -12,7 +12,7 @@ async def reply_forward(message: Message, file_id: int):
     try:
         await message.reply_text(
             f"**🔎Also Join Below My Channel:**\n"
-            f"<b>🔎Ott Released Movies\nLink :- https://telegram.me/+D7L-rX9lKA43MGRl\n\n🔞Adult  Videos\nLink :- https://t.me/+1JtfWmlSGawxNzRl\n\nKannada TV Serials\nlink :- https://t.me/Rockers_TV_Serials</b>\n\n",
+            f"<b>𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐎𝐧𝐥𝐢𝐧𝐞 𝐌𝐨𝐯𝐢𝐞𝐬  🕶\nhttps://t.me/+66Rsf3q0p3c2M2Nl\n\n𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐇𝐃 𝐌𝐨𝐯𝐢𝐞𝐬  🍿\nhttps://t.me/+1z2A8ZxGkEM1N2Q1\n\n𝐓𝐫𝐞𝐧𝐝𝐢𝐧𝐠 𝐌𝐨𝐯𝐢𝐞𝐬 𝐇𝐃 📸\nhttps://t.me/+8K8gz7k6Ry05YzZl\n\nOnline Streaming group 💜\nhttps://t.me/+oQT1f1iF4fU4ZGVl\n\n18+ banned Movies 🔞\nhttps://t.me/+3xxIFZXTj9E1M2E1\n\n𝐑𝐨𝐜𝐤𝐞𝐫𝐬 𝐊𝐚𝐧𝐧𝐚𝐝𝐚 𝐓𝐯 𝐒𝐞𝐫𝐢𝐚𝐥𝐬 📺\nhttps://t.me/Rockers_TV_Serials\n\nSex porn nudi adult video 🔞🔥\nhttps://t.me/+Ce98xoyvoLcwYThl\n\n𝐉𝐃 𝐈𝐏𝐋 𝐌𝐚𝐭𝐜𝐡 𝐑𝐞𝐩𝐨𝐫𝐭 ⁱᵖˡ ᵐᵃᵗᶜʰ📢\nhttps://t.me/+rNwi4b0VLU1iODU1</b>\n\n",
             disable_web_page_preview=True, quote=True)
     except FloodWait as e:
         await asyncio.sleep(e.value)
