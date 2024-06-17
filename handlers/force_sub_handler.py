@@ -49,7 +49,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
                 [
                     [
                         InlineKeyboardButton("🔥 SUBSCRIBE MY YOUTUBE CHANNEL", url="https://youtube.com/@Jnentertainment.?si=-xZOdUGBD3yxLjgW")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("Channel 1️⃣", url="https://t.me/+a7O4p16NVFwwYzBl")
                     ]
