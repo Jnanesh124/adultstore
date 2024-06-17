@@ -44,8 +44,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**<b>Please Join Below all Channel to to get File 📤!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n"
-                 "Due to Overload, Only Channel Subscribers can use the Bot!",
+            text="**<b>Please Join Below all Channel to to get File 📤!\n\nಮೊದಲು ಕೆಲ್ಗಡೆ ಇರುವ ಚಾನಲ್ ಗೆ ಸೆರು ನಂತರ ಫೈಲ್ ದೊರೆಯುತದೆ</b>**\n\n",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
