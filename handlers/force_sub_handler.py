@@ -52,22 +52,22 @@ async def handle_force_sub(bot: Client, cmd: Message):
                     ],
                     [
                         InlineKeyboardButton("Channel 1️⃣", url="https://t.me/+a7O4p16NVFwwYzBl")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("Channel 2️⃣", url=invite_link.invite_link)
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("Channel 3️⃣", url="https://t.me/+1jkEblWjr9g0YmI1")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("Channel 4️⃣", url="https://t.me/+nlo1GNVDGIczZWE9")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("Channel 5️⃣", url="https://t.me/ROCKERS_ADULT")
-                    ]
+                    ],
                     [
                         InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshForceSub")
-                    ]
+                    ],
                 ]
             )
         )
