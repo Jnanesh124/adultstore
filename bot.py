@@ -76,10 +76,6 @@ async def start(bot: Client, cmd: Message):
                     [
                         InlineKeyboardButton("🔎Ott movie", url="https://t.me/+D7L-rX9lKA43MGRl"),
                         InlineKeyboardButton("🔞Adult Videos", url="https://t.me/+1JtfWmlSGawxNzRl")
-                    ],
-                    [
-                        InlineKeyboardButton("Backup channel", url="https://t.me/ROCKERSBACKUP"),
-                        InlineKeyboardButton("👀About Dev", url="https://t.me/alonekingjnanesh")
                     ]
                 ]
             )
