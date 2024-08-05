@@ -1,6 +1,6 @@
 import pytz, random, string  
 from datetime import date 
-from info import API, URL
+from configs import Config
 from shortzy import Shortzy
 
 TOKENS = {}
