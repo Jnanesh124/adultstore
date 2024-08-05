@@ -1,7 +1,7 @@
 # (c) @AbirHasan2005
 
 import asyncio
-from info import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
+from configs import Config
 from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
