@@ -1,7 +1,7 @@
 # (c) @AbirHasan2005
 
 import os
-
+from os import environ
 
 class Config(object):
 	API_ID = int(os.environ.get("API_ID", "0"))
@@ -18,6 +18,11 @@ class Config(object):
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
+	API = environ.get("API", "") # shortlink api
+        URL = environ.get("URL", "") # shortlink domain without https://
+        VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+        BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+        VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
 	ABOUT_BOT_TEXT = f"""
 This is Permanent Files Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
