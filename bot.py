@@ -52,8 +52,9 @@ async def _(bot: Client, cmd: Message):
     await handle_user_status(bot, cmd)
 
 
- @app.on_message(filters.command("start") & filters.private)
+@app.on_message(filters.command("start") & filters.private)
 async def start(client, message):
+    update = message  # Now you can use 'message'
     data = message.command[1]
     if data.split("-", 1)[0] == "verify": # set if or elif it depend on your code
         userid = data.split("-", 2)[1]
