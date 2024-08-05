@@ -6,7 +6,4 @@ dnspython
 psutil
 shortzy
 pytz
-pip install autopep8
-autopep8 --in-place --aggressive --aggressive configs.py
-pip install black
-black configs.py
+
