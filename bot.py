@@ -53,7 +53,7 @@ async def _(bot: Client, cmd: Message):
 
 
 @Bot.on_message(filters.command("start") & filters.private)
-async def start(bot: Client, Message: Config):
+async def start(bot: Client, cmd: Message):
     
     if Config.UPDATES_CHANNEL is not None:
         back = await handle_force_sub(bot, cmd)
