@@ -1,12 +1,12 @@
 # (c) @AbirHasan2005
 
 import asyncio
-from configs import Config
+from info import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
 from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
-
+from utils import check_verification, get_token
 
 async def reply_forward(message: Message, file_id: int):
     try:
@@ -33,6 +33,18 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
 
 
 async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
+    if not await check_verification(client, message.from_user.id) and VERIFY == True:
+        btn = [[
+            InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{BOT_USERNAME}?start="))
+        ],[
+            InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+        ]]
+        await message.reply_text(
+            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            protect_content=True,
+            reply_markup=InlineKeyboardMarkup(btn)
+        )
+        return
     sent_message = await media_forward(bot, user_id, file_id)
     await reply_forward(message=sent_message, file_id=file_id)
     await asyncio.sleep(2)
