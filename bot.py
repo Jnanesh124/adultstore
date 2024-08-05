@@ -22,7 +22,7 @@ from pyrogram.types import (
     CallbackQuery,
     Message
 )
-from configs import config
+from configs import API_ID, API_HASH, BOT_TOKEN, BOT_USERNAME, DB_CHANNEL, BOT_OWNER, DATABASE_URL,  UPDATES_CHANNEL, LOG_CHANNEL, BANNED_USERS, FORWARD_AS_COPY, BROADCAST_AS_COPY, BANNED_CHAT_IDS, OTHER_USERS_CAN_SAVE_FILE, API, URL, VERIFY_TUTORIAL, VERIFY, ABOUT_BOT_TEXT, ABOUT_DEV_TEXT, HOME_TEXT
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
