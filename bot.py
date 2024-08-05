@@ -54,8 +54,6 @@ async def _(bot: Client, cmd: Message):
 
 @Bot.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, cmd: Message):
-    clint = bot 
-    update = message
     data = message.command[1]
     if data.split("-", 1)[0] == "verify": # set if or elif it depend on your code
         userid = data.split("-", 2)[1]
