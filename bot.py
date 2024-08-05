@@ -22,14 +22,14 @@ from pyrogram.types import (
     CallbackQuery,
     Message
 )
-from configs import Config
+from config import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
 from handlers.helpers import b64_to_str, str_to_b64
 from handlers.check_user_status import handle_user_status
 from handlers.force_sub_handler import (
-    handle_force_sub,
+    handle_force_sub,a
     get_invite_link
 )
 from handlers.broadcast_handlers import main_broadcast_handler
@@ -37,6 +37,7 @@ from handlers.save_media import (
     save_media_in_channel,
     save_batch_media_in_channel
 )
+from utils import check_verification, get_token
 
 MediaList = {}
 
@@ -56,7 +57,29 @@ async def _(bot: Client, cmd: Message):
 
 @Bot.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, cmd: Message):
-
+    clint = bot 
+    update = message
+    data = message.command[1]
+    if data.split("-", 1)[0] == "verify": # set if or elif it depend on your code
+        userid = data.split("-", 2)[1]
+        token = data.split("-", 3)[2]
+        if str(message.from_user.id) != str(userid):
+            return await message.reply_text(
+                text="<b>Invalid link or Expired link !</b>",
+                protect_content=True
+            )
+        is_valid = await check_token(client, userid, token)
+        if is_valid == True:
+            await message.reply_text(
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all files till today midnight.</b>",
+                protect_content=True
+            )
+            await verify_user(client, userid, token)
+        else:
+            return await message.reply_text(
+                text="<b>Invalid link or Expired link !</b>",
+                protect_content=True
+            )
     if cmd.from_user.id in Config.BANNED_USERS:
         await cmd.reply_text("Sorry, You are banned.")
         return
