@@ -4,3 +4,5 @@ motor
 aiofiles
 dnspython
 psutil
+shortzy
+pytz
