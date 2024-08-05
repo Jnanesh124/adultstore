@@ -53,7 +53,7 @@ async def _(bot: Client, cmd: Message):
 
 
 @Bot.on_message(filters.command("start") & filters.private)
-async def start(client, message):
+async def start(bot: Client, message: Message):
     
     if cmd.from_user.id in Config.BANNED_USERS:
         await cmd.reply_text("Sorry, You are banned.")
