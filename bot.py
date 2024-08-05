@@ -22,7 +22,7 @@ from pyrogram.types import (
     CallbackQuery,
     Message
 )
-from config import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
+from config import config
 from handlers.database import db
 from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
@@ -37,8 +37,6 @@ from handlers.save_media import (
     save_media_in_channel,
     save_batch_media_in_channel
 )
-from utils import check_verification, get_token
-
 MediaList = {}
 
 Bot = Client(
