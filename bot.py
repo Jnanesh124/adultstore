@@ -53,10 +53,8 @@ async def _(bot: Client, cmd: Message):
 
 
 @Bot.on_message(filters.command("start") & filters.private)
-async def start(bot: Client, Message: cmd):
-    if cmd.from_user.id in Config.BANNED_USERS:
-        await cmd.reply_text("Sorry, You are banned.")
-        return
+async def start(bot: Client, Message: copnfig):
+    
     if Config.UPDATES_CHANNEL is not None:
         back = await handle_force_sub(bot, cmd)
         if back == 400:
